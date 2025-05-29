@@ -63,6 +63,10 @@ class Machine(models.Model):
         related_name='service_maintained_machines',
         limit_choices_to={'role': 'SO'}
     )
+    class Meta:
+        ordering = ['-shipping_date']
+        verbose_name = 'Машина'
+        verbose_name_plural = 'Машины'
 
     def __str__(self):
         return f"{self.model.title} (№{self.factory_number})"

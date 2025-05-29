@@ -1,6 +1,7 @@
 from django.db import models
 from machines.models import Handbook, Machine
 from users.models import User
+from django.core.exceptions import ValidationError
 
 
 class Complaint(models.Model):
@@ -33,9 +34,17 @@ class Complaint(models.Model):
         limit_choices_to={'role': 'SO'},
         related_name='handled_complaints'
     )
+    class Meta:
+        ordering = ['-failure_date']
+        verbose_name = 'Рекламация'
+        verbose_name_plural = 'Рекламации'
+
+    def clean(self):
+        if self.recovery_date and self.failure_date and self.recovery_date < self.failure_date:
+            raise ValidationError("Дата восстановления не может быть раньше даты отказа!")
 
     def save(self, *args, **kwargs):
-        self.downtime = (self.recovery_date - self.failure_date).days
+        self.clean()
         super().save(*args, **kwargs)
 
     def __str__(self):

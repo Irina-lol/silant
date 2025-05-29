@@ -24,6 +24,10 @@ class Maintenance(models.Model):
         on_delete=models.CASCADE,
         related_name='maintenance_history'
     )
+    class Meta:
+        ordering = ['-date']
+        verbose_name = 'Техническое обслуживание'
+        verbose_name_plural = 'Технические обслуживания'
 
     def __str__(self):
         return f"ТО {self.type} для {self.machine}"
