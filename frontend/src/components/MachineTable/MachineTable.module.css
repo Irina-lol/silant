@@ -1,0 +1,19 @@
+.tableWrapper {
+    margin: 2rem 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--primary);
+    color: white;
+}

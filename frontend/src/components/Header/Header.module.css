@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+.logo {
+    height: 40px;
+}
+
+.contacts {
+    display: flex;
+    gap: 1rem;
+}
+
+.telegram {
+    color: white;
+    text-decoration: underline;
+}
+
+.authButton {
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}

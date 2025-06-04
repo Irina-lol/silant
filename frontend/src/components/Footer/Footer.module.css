@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2 rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+.contacts {
+    display: flex;
+    gap: 1 rem;
+}
+
+.telegram {
+    color: white;
+    text-decoration: underline;
+}
+
+.copyright {
+    opacity: 0.8;
+}

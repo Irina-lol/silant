@@ -1,0 +1,16 @@
+:root {
+    --primary: #163E6C;
+    --secondary: #D20A11;
+    --background: #EBE6D6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: boreder-box;
+    font-family: 'PT Astra Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
