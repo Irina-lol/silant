@@ -26,11 +26,18 @@ class MachineSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class PublicMachineSerializer(serializers.ModelSerializer):
-    model = Machine
-    fields = [
-        'factory_number', 'model', 'engine_model',
-        'engine_number', 'transmission_model',
-        'transmission_number', 'drive_axle_model',
-        'drive_axle_number', 'steering_axle_model',
-        'steering_axle_number'
-    ]
+    model = serializers.StringRelatedField()
+    engine_model = serializers.StringRelatedField()
+    transmission_model = serializers.StringRelatedField()
+    drive_axle_model = serializers.StringRelatedField()
+    steering_axle_model = serializers.StringRelatedField()
+
+    class Meta:
+        model = Machine
+        fields = [
+            'factory_number', 'model', 'engine_model',
+            'engine_number', 'transmission_model',
+            'transmission_number', 'drive_axle_model',
+            'drive_axle_number', 'steering_axle_model',
+            'steering_axle_number'
+        ]

@@ -1,10 +1,10 @@
 from django.db import models
-from machines.models import Machine
+from machines.models import Handbook, Machine
 from users.models import User
 
 class Maintenance(models.Model):
     type = models.ForeignKey(
-        Machine,
+        Handbook,
         on_delete=models.PROTECT,
         limit_choices_to={'name': 'Вид ТО'},
         related_name='maintenance_records'

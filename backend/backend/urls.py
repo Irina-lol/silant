@@ -16,19 +16,28 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.http import JsonResponse
+from django.views.decorators.csrf import ensure_csrf_cookie
 from rest_framework.routers import DefaultRouter
 from machines.views import MachineViewSet, public_machine_search
 from maintenance.views import MaintenanceViewSet
 from complaints.views import ComplaintViewSet
+from users.views import CustomAuthToken
 
 router = DefaultRouter()
 router.register(r'machine', MachineViewSet)
 router.register(r'maintenance', MaintenanceViewSet)
 router.register(r'complaint', ComplaintViewSet)
 
+@ensure_csrf_cookie
+def get_csrf_token(request):
+    return JsonResponse({'detail': 'CSRF cookie set'})
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
+    path('api/csrf_token/', get_csrf_token, name='csrf_token'),
+    path('api/auth/login/', CustomAuthToken.as_view(), name='api-login'),
     path('api/auth/', include('rest_framework.urls')),
     path('api/public/machines/<str:factory_number>/', public_machine_search),
     path('accounts/', include('allauth.urls')),

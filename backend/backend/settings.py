@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g=xma1yb%93m)3pxvdu5^7chwq#ay19qoqj+$uuei=y88*ivq#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 SITE_ID = 1
 
@@ -43,10 +43,12 @@ INSTALLED_APPS = [
     'complaints',
     'users.apps.UsersConfig',
     'rest_framework',
+    'rest_framework.authtoken',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'django_filters',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +60,23 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000'
+]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:3000',
+]
+
+SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SECURE = False
+CSRF_USE_SESSIONS = False
+CSRF_COOKIE_HTTPONLY = False
 
 ROOT_URLCONF = 'backend.urls'
 
@@ -82,6 +100,13 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
         'django_filters.rest_framework.DjangoFilterBackend',
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES' : [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
     ]
 }
 

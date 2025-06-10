@@ -9,13 +9,22 @@ from .filters import MachineFilter
 @api_view(['GET'])
 def public_machine_search(request, factory_number):
     try:
-        machine = Machine.objects.get(factory_number=factory_number)
+        machine = Machine.objects.select_related('model', 'engine_model', 'transmission_model',
+            'drive_axle_model', 'steering_axle_model'
+        ).get(factory_number=factory_number)
+
         serializer = PublicMachineSerializer(machine)
         return Response(serializer.data)
+
     except Machine.DoesNotExist:
         return Response(
             {"error": "Машина с таким номером не найдена"},
             status=status.HTTP_404_NOT_FOUND
+        )
+    except Exception as e:
+        return Response(
+            {"error": str(e)},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR
         )
 
 class MachineViewSet(viewsets.ModelViewSet):

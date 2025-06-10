@@ -1,31 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="87cb4122-e692-46d0-b6b4-5dcd44868623" name="Changes" comment="" />
+    <list default="true" id="87cb4122-e692-46d0-b6b4-5dcd44868623" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/silant_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/silant_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/backend/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/backend/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/complaints/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/complaints/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/machines/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/machines/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/machines/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/machines/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/maintenance/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/maintenance/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/css-loader/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/css-loader/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/css-loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/css-loader/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/style-loader/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/style-loader/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/node_modules/style-loader/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/node_modules/style-loader/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MachineTable/MachineTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MachineTable/MachineTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MachineTable/MachineTable.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MachineTable/MachineTable.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/webpack.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2xf4HaS7l2WfzdQL0TPwq69Uy7I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\msi\PycharmProjects\levson\silant_project" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -43,5 +90,16 @@
       <updated>1748315706500</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

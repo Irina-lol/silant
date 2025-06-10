@@ -32,7 +32,7 @@ module.exports = {
                     {
                         loader: 'css-loader',
                         options: {
-                            modoles: {
+                            modules: {
                                 localIdentName: '[name]__[local]--{hash:base64:5}',
                             },
                         },
@@ -41,7 +41,7 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|svg|woff2)$/,
+                test: /\.(jpg|png|svg|woff2)$/,
                 type: 'asset/resource',
             },
         ],

@@ -1,0 +1,81 @@
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.section h3 {
+  margin-top: 0;
+  color: #163E6C;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.formGroup textarea {
+  resize: vertical;
+}
+
+.error input,
+.error select,
+.error textarea {
+  border-color: #D20A11;
+}
+
+.errorText {
+  color: #D20A11;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.saveButton {
+  background: #163E6C;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelButton {
+  background: #D20A11;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
